@@ -1,0 +1,16 @@
+{
+  "name": "socket-chat",
+  "version": "1.0.0",
+  "description": "Aplicativo de Chat em Sockets feito com JavaScript",
+  "main": "index.js",
+  "author": "jvictorfarias",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^6.1.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1",
+    "socket.io": "^2.2.0"
+  }
+}
