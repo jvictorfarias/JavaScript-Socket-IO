@@ -1,6 +1,9 @@
 var app = require("express")();
 var http = require("http").createServer(app);
 var io = require("socket.io")(http);
+var cors = require("cors");
+
+app.use(cors());
 
 app.get("/", function(req, res) {
   res.sendFile(__dirname + "/index.html");
@@ -12,7 +15,7 @@ app.get("/style.css", function(req, res) {
 
 io.on("connection", function(socket) {
   socket.on("connection", function() {
-    console.log("Um usuário conectou!");
+    console.log("Usuário conectado");
   });
 
   socket.on("disconnect", function() {

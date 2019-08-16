@@ -18,7 +18,7 @@ form input {
   margin-bottom: 20px;
   border: 1px solid #ddd;
   border-radius: 4px;
-  width: 90%;
+  width: 85%;
   height: 48px;
   padding: 0 20px;
   font-size: 16px;
@@ -28,7 +28,7 @@ form button {
   width: 9%;
   background: rgb(196, 197, 197);
   border-radius: 4px;
-  margin-left: 10px;
+  margin-left: 40px;
   padding: 10px;
 }
 #messages {

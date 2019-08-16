@@ -9,9 +9,10 @@
     "eslint": "^6.1.0"
   },
   "scripts": {
-    "start": "yarn nodemon index.js"
+    "dev": "yarn nodemon index.js"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "nodemon": "^1.19.1",
     "socket.io": "^2.2.0"
