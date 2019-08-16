@@ -6,8 +6,14 @@ app.get("/", function(req, res) {
   res.sendFile(__dirname + "/index.html");
 });
 
+app.get("/style.css", function(req, res) {
+  res.sendFile(__dirname + "/style.css");
+});
+
 io.on("connection", function(socket) {
-  console.log("Um usuário conectou!");
+  socket.on("connection", function() {
+    console.log("Um usuário conectou!");
+  });
 
   socket.on("disconnect", function() {
     console.log("Um usuário desconectou!");
